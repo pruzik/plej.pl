@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="veiwport" content="width=device-width, initial-scale=1.0">
+	<title>PRZEJDŹ SAMEGO SIEBIE</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+	<script src="script.js"></script>
+</head>
+<body oncontextmenu="return false">
+<div class="spacer"></div>
+	<div class="container" id="firstView"> 
+		<div class="header"> PRZEJDŹ SAMEGO SIEBIE.
+		</div>
+		<div class="icons">
+			<img src="img/icons/Axe.png" class="icon">
+			<img src="img/icons/Campfire.png" class="icon">
+			<img src="img/icons/Compass.png" class="icon">
+			<img src="img/icons/Mountains.png" class="icon">
+			<img src="img/icons/Valley.png" class="icon">
+			<img src="img/icons/Knief.png" class="icon">
+			<img src="img/icons/Torch.png" class="icon">
+			<img src="img/icons/Laundry.png" class="icon">
+			<img src="img/icons/Scenery.png" class="icon">
+			<img src="img/icons/Storm_weather.png" class="icon">
+			<img src="img/icons/Tent.png" class="icon">
+			<img src="img/icons/Tent1.png" class="icon">
+		</div>
+		<div class="line"></div>
+		<div class=columnContainer>
+			<div class="columnLeft">
+				<div id="top"> 	Dołącz do naszej fantastycznej aplikacji, </br>
+								dzięki, której znajdziesz fascynujące</br>
+								szlaki turystyczne.
+				</div>
+				<div id="bottom">	Wyszukujemy szlaki w Posce, Europie oraz Stanach</br>
+									Zjednoczonych, w naszej bazie mamy ponad <b>3000</br>
+									szlaków</b> o łącznej długości <b>43021 km</b>	
+				</div>
+			</div>
+			<div class="columnRight">
+			<form action="#" name="form1" onclick="nameCheck()"  >
+				<input name="name" onclick="nameCheck()" class="input" id="nameSurname" placeholder="imię i nazwisko" type="text" >
+				<div class="alert" id="alert"> Te dane znajdują się już w naszej bazie	
+				</div>
+				<span class="underline"></span>
+				<input name="email" id="email" class="input" placeholder="email" type="text" >
+				<span class="underline"></span>
+				</form>
+				<form name="dropDownMenu">
+					<input class="input2" onsubmit="emailCheck()" id="countrys" placeholder="kraj pochodzenia"  list="country" name="country">
+						<datalist id="country">
+					    	<option class="option" value="Polska">
+						    <option class="option" value="Albania">
+						    <option class="option" value="Algieria">
+						    <option class="option" value="Andora">
+						    <option class="option" value="Angola">
+						    <option class="option" value="Antigua i Barduda">
+					  </datalist>
+				</form>
+				<div class="columnRightContainer">
+					<div class="columnRightContainer1">
+						<div class="checkbox">
+							<input type="checkbox" id="chebox1"/>
+							<label for="chebox1"></label>
+						</div>
+					</div>
+					<div class="columnRightContainer2"> Wyrażam zgodnę na przetwarzanie podanych przeze mnie danych osobowych
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="footer">
+			<button type="submit" onclick="animation('firstView', 'secondView', '0', '1')"   class="input" value="Submit"  id="chkb">ZAREJETRUJ SIĘ</button>
+		</div>
+	</div>
+
+	<div id="secondView" >
+		<div class="logo"><img src="img/logo.png"></div>
+		<div class="thanks">DZIĘKUJEMY ZA REJESTRACJĘ</div>
+		<div class="button">ZACZNIJ ODKRYWAĆ SZLAKI</div>
+		
+	</div>
+		
+	
+</body>
+</html>
