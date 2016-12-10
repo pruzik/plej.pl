@@ -1,466 +1,60 @@
-	
-@media only screen and (max-width: 820px){
-	.icon{
-		padding-left: 35px !important;
-		padding-right: 10px !important;
+function nameCheck(){
+
+	var n = document.getElementById('nameSurname').value;
+
+	if(n == 'Jan Kowalski')
+	{
+		document.getElementById('nameSurname').className = 'inputWrong';
+		document.getElementById('alert').style.visibility = 'visible';
+		document.getElementById('alert').innerHTML = "Te dane znajdują się już w naszej bazie";
 	}
-	.icons{
-		margin-left: 30px;
+	if (n !== 'Jan Kowalski' && n !== '')
+	{
+		document.getElementById('nameSurname').className = 'input';
+		document.getElementById('alert').style.visibility = 'hidden';
 	}
-	.container{
-		max-width: 500px !important;
-		margin-top: 300px !important;
+}
+
+function emailCheck(){
+
+	var e = document.getElementById('nameSurname').value;
+
+	if(e == 'Jan Kowalski')
+	{
+		
+		document.getElementById('email').className = 'inputWrong';
+		document.getElementById('alert').style.visibility = 'visible';
+		document.getElementById('alert').innerHTML = "Te dane znajdują się już w naszej bazie";
+
 	}
-	#secondView{
-		max-width: 500px !important;
-		margin-top: 100px !important;
+	if (e !== 'Jan Kowalski' && e !== '')
+	{
+		document.getElementById('email').className = 'input';
+		document.getElementById('alert').style.visibility = 'hidden';
+		++checksum;
 	}
-	#top{
-		width: 100% !important;
-		padding-left: 60px !important;
+
+}
+
+
+function animation(el, ele, op, opa){
+
+	var basic = document.getElementById(el);
+
+	basic.style.transition = " opacity 1.0s linear 0s";
+	basic.style.opacity = op;
+
+	var cover = document.getElementById(ele);
+
+	cover.style.transition  = " opacity 1.0s linear 0s";
+	cover.style.opacity = opa;
+	window.scrollTo(0, 0);
+
+	setTimeout(display, 1200);
+	function display(){
+		basic.style.display= "none";
 	}
-	#bottom{
-		width: 100% !important;
-		padding-left: 60px !important;
-	}
-	.input {
-		width: 80% !important;
-		margin-left: 60px !important;
-	}
-	.inputWrong {
-		width: 80% !important;
-		margin-left: 60px !important;
-	}
-	.input2 {
-		width: 80% !important;
-		margin-left: 60px !important;
-	}
-	.underline{
-		padding-left: 60px !important;
-	}
-	.columnRightContainer1{
-		padding-left: 60px;
-	}
-	button[type="submit"]{
-	 max-width: 500px !important;
-	 width: 100% !important;
-	 margin-left: 0px !important;
-	}
-	.alert{
-		margin-left: 60px !important;
-		margin-top: -120px !important;
-		max-width: 320px !important;
-		width: 80% !important;
-	}
-	.alert:after{
-	border-left: 6px solid transparent !important;
-	border-top: 6px solid red !important; 
-	left: 50% !important;
-	top: 110% !important;
-	margin-left: -10px;
-	}
-}	
-
-
-@media only screen and (max-width: 500px){
-	.icon{
-		padding-left: 35px !important;
-		padding-right: 10px !important;
-	}
-	.icons{
-		padding-left: 15px;
-	}
-	.container{
-		max-width: 300px !important;
-		margin-top: 300px !important;
-	}
-	#secondView{
-		max-width: 300px !important;
-	}
-	#top{
-		width: 80% !important;
-		padding-left: 30px !important;
-	}
-	#bottom{
-		width: 80% !important;
-		padding-left: 30px !important;
-	}
-	.input {
-		width: 80% !important;
-		margin-left: 30px !important;
-	}
-	.inputWrong {
-		width: 80% !important;
-		margin-left: 30px !important;
-	}
-	.input2 {
-		width: 80% !important;
-		margin-left: 30px !important;
-	}
-	.underline{
-		padding-left: 30px !important;
-	}	
-	.columnRightContainer1{
-		padding-left: 30px;
-	}
-	.columnRightContainer2{
-		max-width: 200px !important;
-	}
-	.alert{
-		margin-left: 30px !important;
-		margin-top: -120px !important;
-		max-width: 260px !important;
-		width: 80% !important;
-	}
-	.thanks{
-		max-width: 300px !important;
-		width: 100% !important;
-		font-size: 250% !important;
-	}
- }	
-
-
-body { 
-  	background: url(img/bg.png) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
- 	-moz-background-size: cover;
- 	-o-background-size: cover;
- 	background-size: cover;
 }
 
-.container{
-	background-image: url('img/content-bg.png') ; 
-  	background-size: cover;
-	position: absolute;
-	max-width: 820px;
-	max-height: auto;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin-bottom: 50px;
-	z-index: 99;
-}
 
-.header {
-	font-family: 'Exo 2', sans-serif;
-	font-size: 300%; 
-	text-align: center;
-	color: white;
-  	margin-top: 26px;
-  	margin-bottom: 35px;
-}
 
-.icon{
-	display: inline-block;
-	width: 30px;
-	height: 30px;
-	padding-left: 18px;
-	padding-right: 16px;
-	padding-bottom: 19px;
-}
-
-.icons{
-	display: inline-block;
-	width: 100%;
-	margin-left: auto;
-}
-
-.line{
-	background-image: url(img/line.png);
-	background-repeat: repeat-x;
-	max-width: 820px;
-	width: 100%;
-	height: 1px;
-	padding-bottom: 45px;
-}
-
-.columnContainer{
-	max-width: 820px;
-	width: 100%;
-	display: inline-block;
-	float: left;
-}
-
-.columnLeft{
-	display: inline-block;
-	max-width: 400px;
-	width: 100%;
-	float: left;
-}
-
-#top{
-	font-family: 'Lato', sans-serif;
-	font-weight: bold;
-	font-size: 120%;
-	color: white;
-	padding-left: 30px;
-	padding-bottom: 37px;
-	max-width: 380px;
-	width: 100%;
-}
-
-#bottom{
-	font-family: 'Lato', sans-serif;
-	font-weight: normal;
-	font-size: 100%;
-	color: white;
-	padding-left: 30px;
-	padding-bottom: 72px;
-	max-width: 380px;
-	width: 100%;
-}
-
-.columnRight{
-	display: inline-block;
-	max-width: 400px;
-	width: 100%;
-	float: left;
-}
-
-.input {
-	clear: both;
-	max-width: 380px;
-	width: 100%;
-	background-color: transparent;
-  	border: none;
-  	border-bottom: 1px solid #fff;
-  	color: white;
-  	box-sizing: border-box;
-  	font-family: 'Lato', sans-serif;
-  	font-size: 70%;
-  	padding-bottom: 10px;
-  	margin-bottom: 35px;
-}
-
-.inputWrong {
-	clear: both;
-	max-width: 380px;
-	width: 100%;
-	height: 30px;
-	background-color: white;
-  	border: none;
-  	border-bottom: 1px solid #fff;
-  	color: red;
-  	box-sizing: border-box;
-  	font-family: 'Lato', sans-serif;
-  	font-size: 70%;
-  	padding-bottom: 10px;
-  	margin-bottom: 35px;
-  	border: 1px solid red;
-}
-
-.inputWrong text{
-	padding-left: 20px;
-	color: red;
-}
-
-.input2 {
-	max-width: 380px;
-	width: 100%;
-	background-color: transparent;
-  	border: none;
-  	border-bottom: 1px solid #fff;
-  	color: white;
-  	box-sizing: border-box;
-  	font-family: 'Lato', sans-serif;
-  	font-size: 70%;
-  	margin-bottom: 25px;
-}
-
-.input2 datalist option{
-	background-color: transparent;
-
-}
-
-.option{
-	font-family: 'Lato', sans-serif;
-  	font-size: 65%;
-  	color: white;
-}
-
-input::-webkit-input-placeholder {
-  	color: white;
- 	padding-left: 20px;
-}
-
-.underline{
-	margin-left: 30px;
-}
-
-.checker{
-	float: left;
-}
-
-.columnRightContainer{
-	max-width: 400px;
-	width: 100%;
-	display: inline-block;
-	float: left;
-}
-
-.columnRightContainer1{
-	max-width: 26px;
-	width: 100%;
-	float: left;
-}
-
-.columnRightContainer2{
-	font-family: 'Lato', sans-serif;
-  	font-size: 65%;
-  	color: white;
-	max-width: 310px;
-	width: 100%;
-	float: left;
-	padding-bottom: 15px;
-}
-
-.checkbox{
-	width: 16px;
-	height: 16px;
-	background-color: white;
-	position: relative;
-}
-
-.checkbox input[type="checkbox"]{
-	visibility: hidden;
-}
-
-.checkbox label{
-	width: 14px;
-	height: 14px;
-	position: absolute;
-	top: 1px;
-	left: 1px;
-	background-color: white;
-}
-.checkbox label:before{
-	content: '';
-	width: 7px;
-	height: 3px;
-	border: 3px solid #000;
-	position: absolute;
-	border-top: none;
-	border-right: none;
-	transform: rotate(-45deg);
-	top: 4px;
-	left: 2px;
-	opacity: 0;
-}
-
-.checkbox input[type="checkbox"]:checked + label:before{
-	opacity: 1;
-}
-
-button[type="submit"]{
-	clear: both;
-	max-width: 820px;
-	width: 100%;
-	height: 56px;
-	font-family: 'Lato', sans-serif;
-	font-size: 100%; 
-	font-weight: 900;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 56px;
-	color: #000;
-	background-color: white;
-	margin-right: 25px;
-}
-
-.footer{
-	clear: both;
-	max-width: 820px;
-	width: 100%;
-	height: 56px;
-	background-color: white;
-}
-
-.spacer{
-	height: 50px;
-}
-
-.alert{
-	visibility: hidden;
-	background-color: red;
-	color: white;
-	width: 284px;
-	height: 44px;
-	font-family: 'Lato', sans-serif;
-	font-weight: normal;
-	font-size: 70%;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 44px;
-	position: fixed;
-	margin-left: -300px;
-	margin-top: -70px;
-	z-index: 111;
-}
-
-.alert:after{
-	content: ' ';
-	width: 0px;
-	height: 0px;
-	border-top: 6px solid transparent;
-	border-left: 6px solid red;
-	border-bottom: 6px solid transparent; 
-	border-right: 6px solid transparent;
-	position: absolute;
-	left: 100%;
-	top: 50%;
-	margin-top: -6px;
-}
-
-#secondView{
-	background-image: url('img/content-bg.png') ; 
-  	background-size: cover;
-	position: absolute;
-	max-width: 820px;
-	max-height: auto;
-	width: 100%;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	margin-bottom: 50px;
-	z-index: 0;
-}
-
-.logo{
-	max-width: 820px;
-	width: 100%
-}
-
-.logo img{
-	position: relative;
-	left: 50%;
-	transform: translate(-50%);
-	margin-top: 52px;
-}
-
-.thanks {
-	font-family: 'Exo 2', sans-serif;
-	font-size: 300%; 
-	text-align: center;
-	color: white;
-  	margin-top: 54px;
-  	margin-bottom: 56px;
-  	max-width: 820px;
-  	width: 100%;
-  }
-
-.button{
-	clear: both;
-	max-width: 820px;
-	width: 100%;
-	height: 56px;
-	font-family: 'Lato', sans-serif;
-	font-size: 100%; 
-	font-weight: 900;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 56px;
-	color: #000;
-	background-color: white;
-	margin-right: 25px;
-}
