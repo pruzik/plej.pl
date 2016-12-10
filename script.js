@@ -127,11 +127,7 @@
 		width: 100% !important;
 		font-size: 250% !important;
 	}
-
-
- }	
-
-
+}	
 body { 
   	background: url(img/bg.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
