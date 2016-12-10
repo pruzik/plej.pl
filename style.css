@@ -9,11 +9,11 @@
 	}
 	.container{
 		max-width: 500px !important;
-		margin-top: 100px !important;
+		margin-top: 300px !important;
 	}
 	#secondView{
 		max-width: 500px !important;
-		margin-top: 50px !important;
+		margin-top: 100px !important;
 	}
 	#top{
 		width: 100% !important;
@@ -61,6 +61,7 @@
 	}
 }	
 
+
 @media only screen and (max-width: 500px){
 	.icon{
 		padding-left: 35px !important;
@@ -75,7 +76,6 @@
 	}
 	#secondView{
 		max-width: 300px !important;
-		margin-top: 0px !important;
 	}
 	#top{
 		width: 80% !important;
@@ -126,7 +126,7 @@ body {
  	-moz-background-size: cover;
  	-o-background-size: cover;
  	background-size: cover;
-	}
+}
 
 .container{
 	background-image: url('img/content-bg.png') ; 
@@ -140,7 +140,7 @@ body {
 	transform: translate(-50%, -50%);
 	margin-bottom: 50px;
 	z-index: 99;
-	}
+}
 
 .header {
 	font-family: 'Exo 2', sans-serif;
@@ -149,7 +149,7 @@ body {
 	color: white;
   	margin-top: 26px;
   	margin-bottom: 35px;
-  }
+}
 
 .icon{
 	display: inline-block;
@@ -188,6 +188,7 @@ body {
 	width: 100%;
 	float: left;
 }
+
 #top{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
@@ -248,6 +249,8 @@ body {
   	margin-bottom: 35px;
   	border: 1px solid red;
 }
+
+.inputWrong text{
 	padding-left: 20px;
 	color: red;
 }
@@ -267,6 +270,7 @@ body {
 
 .input2 datalist option{
 	background-color: transparent;
+
 }
 
 .option{
@@ -276,13 +280,14 @@ body {
 }
 
 input::-webkit-input-placeholder {
-  color: white;
-  padding-left: 20px;
+  	color: white;
+ 	padding-left: 20px;
 }
 
 .underline{
 	margin-left: 30px;
 }
+
 .checker{
 	float: left;
 }
@@ -329,7 +334,6 @@ input::-webkit-input-placeholder {
 	left: 1px;
 	background-color: white;
 }
-
 .checkbox label:before{
 	content: '';
 	width: 7px;
@@ -371,6 +375,7 @@ button[type="submit"]{
 	height: 56px;
 	background-color: white;
 }
+
 .spacer{
 	height: 50px;
 }
@@ -417,8 +422,8 @@ button[type="submit"]{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin-bottom: 50px;
 	z-index: 0;
-	opacity: 0;
 }
 
 .logo{
@@ -442,7 +447,7 @@ button[type="submit"]{
   	margin-bottom: 56px;
   	max-width: 820px;
   	width: 100%;
-}
+  }
 
 .button{
 	clear: both;
