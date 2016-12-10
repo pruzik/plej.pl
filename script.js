@@ -4,11 +4,9 @@
 		padding-left: 35px !important;
 		padding-right: 10px !important;
 	}
-
 	.icons{
 		margin-left: 30px;
 	}
-
 	.container{
 		max-width: 500px !important;
 		margin-top: 300px !important;
@@ -17,7 +15,6 @@
 		max-width: 500px !important;
 		margin-top: 100px !important;
 	}
-
 	#top{
 		width: 100% !important;
 		padding-left: 60px !important;
@@ -38,10 +35,8 @@
 		width: 80% !important;
 		margin-left: 60px !important;
 	}
-
 	.underline{
-
-			padding-left: 60px !important;
+		padding-left: 60px !important;
 	}
 	.columnRightContainer1{
 		padding-left: 60px;
@@ -63,9 +58,8 @@
 	left: 50% !important;
 	top: 110% !important;
 	margin-left: -10px;
-
-}
- }	
+	}
+}	
 
 
 @media only screen and (max-width: 500px){
@@ -73,7 +67,6 @@
 		padding-left: 35px !important;
 		padding-right: 10px !important;
 	}
-
 	.icons{
 		padding-left: 15px;
 	}
@@ -83,7 +76,6 @@
 	}
 	#secondView{
 		max-width: 300px !important;
-
 	}
 	#top{
 		width: 80% !important;
@@ -93,7 +85,6 @@
 		width: 80% !important;
 		padding-left: 30px !important;
 	}
-
 	.input {
 		width: 80% !important;
 		margin-left: 30px !important;
@@ -109,7 +100,6 @@
 	.underline{
 		padding-left: 30px !important;
 	}	
-
 	.columnRightContainer1{
 		padding-left: 30px;
 	}
@@ -127,7 +117,9 @@
 		width: 100% !important;
 		font-size: 250% !important;
 	}
-}	
+ }	
+
+
 body { 
   	background: url(img/bg.png) no-repeat center center fixed; 
   	-webkit-background-size: cover;
@@ -148,7 +140,7 @@ body {
 	transform: translate(-50%, -50%);
 	margin-bottom: 50px;
 	z-index: 99;
-	}
+}
 
 .header {
 	font-family: 'Exo 2', sans-serif;
@@ -157,7 +149,7 @@ body {
 	color: white;
   	margin-top: 26px;
   	margin-bottom: 35px;
-  }
+}
 
 .icon{
 	display: inline-block;
@@ -184,7 +176,6 @@ body {
 }
 
 .columnContainer{
-
 	max-width: 820px;
 	width: 100%;
 	display: inline-block;
@@ -197,6 +188,7 @@ body {
 	width: 100%;
 	float: left;
 }
+
 #top{
 	font-family: 'Lato', sans-serif;
 	font-weight: bold;
@@ -216,7 +208,6 @@ body {
 	padding-left: 30px;
 	padding-bottom: 72px;
 	max-width: 380px;
-
 	width: 100%;
 }
 
@@ -241,6 +232,7 @@ body {
   	padding-bottom: 10px;
   	margin-bottom: 35px;
 }
+
 .inputWrong {
 	clear: both;
 	max-width: 380px;
@@ -263,9 +255,7 @@ body {
 	color: red;
 }
 
-
 .input2 {
-
 	max-width: 380px;
 	width: 100%;
 	background-color: transparent;
@@ -275,7 +265,6 @@ body {
   	box-sizing: border-box;
   	font-family: 'Lato', sans-serif;
   	font-size: 70%;
-
   	margin-bottom: 25px;
 }
 
@@ -283,21 +272,22 @@ body {
 	background-color: transparent;
 
 }
+
 .option{
 	font-family: 'Lato', sans-serif;
   	font-size: 65%;
   	color: white;
 }
 
-
 input::-webkit-input-placeholder {
-  color: white;
-  padding-left: 20px;
+  	color: white;
+ 	padding-left: 20px;
 }
 
 .underline{
 	margin-left: 30px;
 }
+
 .checker{
 	float: left;
 }
@@ -308,11 +298,13 @@ input::-webkit-input-placeholder {
 	display: inline-block;
 	float: left;
 }
+
 .columnRightContainer1{
 	max-width: 26px;
 	width: 100%;
 	float: left;
 }
+
 .columnRightContainer2{
 	font-family: 'Lato', sans-serif;
   	font-size: 65%;
@@ -323,16 +315,17 @@ input::-webkit-input-placeholder {
 	padding-bottom: 15px;
 }
 
-
 .checkbox{
 	width: 16px;
 	height: 16px;
 	background-color: white;
 	position: relative;
 }
+
 .checkbox input[type="checkbox"]{
 	visibility: hidden;
 }
+
 .checkbox label{
 	width: 14px;
 	height: 14px;
@@ -354,11 +347,10 @@ input::-webkit-input-placeholder {
 	left: 2px;
 	opacity: 0;
 }
+
 .checkbox input[type="checkbox"]:checked + label:before{
 	opacity: 1;
 }
-
-
 
 button[type="submit"]{
 	clear: both;
@@ -376,15 +368,14 @@ button[type="submit"]{
 	margin-right: 25px;
 }
 
-
 .footer{
 	clear: both;
 	max-width: 820px;
 	width: 100%;
 	height: 56px;
 	background-color: white;
-
 }
+
 .spacer{
 	height: 50px;
 }
@@ -433,18 +424,20 @@ button[type="submit"]{
 	transform: translate(-50%, -50%);
 	margin-bottom: 50px;
 	z-index: 0;
-	}
+}
 
 .logo{
 	max-width: 820px;
 	width: 100%
 }
+
 .logo img{
 	position: relative;
 	left: 50%;
 	transform: translate(-50%);
 	margin-top: 52px;
 }
+
 .thanks {
 	font-family: 'Exo 2', sans-serif;
 	font-size: 300%; 
@@ -457,7 +450,7 @@ button[type="submit"]{
   }
 
 .button{
-		clear: both;
+	clear: both;
 	max-width: 820px;
 	width: 100%;
 	height: 56px;
