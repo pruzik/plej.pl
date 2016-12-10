@@ -76,6 +76,7 @@
 	}
 	#secondView{
 		max-width: 300px !important;
+		margin-top: 0px !important;
 	}
 	#top{
 		width: 80% !important;
